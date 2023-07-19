@@ -1,13 +1,23 @@
+#include <stdlib.h>
 #include <stdio.h>
+#include <math.h>
 
-int myRoot(double x) // x の平方根を返す関数。x >= 0 ではないとき exit(1) とする。 
+double myRoot(double x) // x の平方根を返す関数。x >= 0 ではないとき exit(1) とする。 
 {
   int y;
-  if( x <= 0 ){
+  if( !(x >= 0) ){
     exit(1);
   }
   y = sqrt(x);
   return y;
+}
+
+void foo(double x)
+{
+  if( x > 0 ) prontf("正の値です。\n");
+  else if( x == 0 ) printf("0です。\n");
+  else if( x < 0 ) printf("負の値です。\n");
+  else printf("数ではないです。\n");
 }
 
 int main(void)
