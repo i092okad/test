@@ -13,22 +13,9 @@ double myRoot(double x) // x の平方根を返す関数。x >= 0 ではない�
   return y;
 }
 
-void foo(double x)
-{
-  if( x > 0 ){
-    printf("正の値です。\n");
-  }else if( x == 0 ){
-    printf("0です。\n");
-  }else if( x < 0 ){
-    printf("負の値です。\n");
-  }else{
-    printf("数ではないです。\n");
-  }
-}
-
 int main(void)
 {
-  int i;
+  int i = 0; //変数iの初期値が設定されていなかったため、初期値を0にする
   double *x = (double *)malloc(sizeof(double) * 100);
 
   while( i <= 100 ){
