@@ -1,7 +1,9 @@
 CC := gcc
+CFLAGS := -Wall -O
+LIBS := -lm
 
-main:main.c
-  $(CC) -Wall -O -o main main.c -lm
+main: main.c
+        $(CC) $(CFLAGS) -o main main.c $(LIBS)
 
 clean:
-  rm main *~
+        rm main *~
