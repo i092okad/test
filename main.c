@@ -1,4 +1,4 @@
-#include <stdlib.h>
+#include <stdlib.h> //exit関数,malloc関数を使うために必要
 #include <stdio.h>
 #include <math.h>
 
