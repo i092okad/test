@@ -1,7 +1,7 @@
 CC := gcc
 
 main:main.c
-  gcc -Wall -O -o main main.c -lm
+  $(CC) -Wall -O -o main main.c -lm
 
 clean:
   rm main *~
