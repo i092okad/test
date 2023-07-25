@@ -2,6 +2,7 @@
 #include <stdlib.h> //exit関数,malloc関数,free関数を使うために必要
 #include <math.h> //sqrt関数を使うために必要
 
+//小数点以下も正確に表示するためにdouble型に変更
 double myRoot(double x) // x の平方根を返す関数。x >= 0 ではないとき exit(1) とする。 
 {
   double y; //小数点以下も正確に表示するためにdouble型に変更
