@@ -1,6 +1,6 @@
-#include <stdlib.h> //exit関数,malloc関数を使うために必要
 #include <stdio.h>
-#include <math.h>
+#include <stdlib.h> //exit関数,malloc関数,free関数を使うために必要
+#include <math.h> //sqrt関数を使うために必要
 
 double myRoot(double x) // x の平方根を返す関数。x >= 0 ではないとき exit(1) とする。 
 {
